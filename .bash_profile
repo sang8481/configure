@@ -11,11 +11,8 @@ alias g++11="g++ -std=c++11 -o exec"
 alias tree2="tree -L 2 ."
 alias tree3="tree -L 3 ."
 alias ld="ls -d */"
-alias ssh1="ssh sangsulee@168.188.123.203"
-alias sshpi="ssh 114.207.139.28 8481"
-alias sshpi_home="ssh pi@192.168.35.147"
-alias sshvm="ssh dbserver1@114.207.139.28 8484"
-alias sshdb="ssh dbserver1@192.168.35.177"
+alias sshhome="ssh -4 -p 8481 210.210.193.138"
+alias sshvm="ssh 172.16.129.128"
 alias c="clear"
 alias t="tmux"
 alias vrc="vi ~/.vimrc"
@@ -36,3 +33,6 @@ export PS1="\u@\h \W\[\033[32m\]\$(parse_git_branch)\[\033[00m\] $"
 # The original version is saved in .bash_profile.pysave
 PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
 export PATH
+
+# added by Anaconda3 4.2.0 installer
+export PATH="/Users/sangsulee/anaconda3/bin:$PATH"
